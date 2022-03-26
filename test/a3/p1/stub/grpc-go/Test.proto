@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package a3.p1;
+
+option go_package="github.com/likezhang-public/{{ repo }}/test/a3/p1/grpc-go/stubs";
+
+
+service Test {
+    rpc SayHello (HelloRequest) returns (HelloReply);
+}
+
+
+message HelloRequest {
+    string msg = 1;
+}
+message HelloReply {
+    string msg = 1;
+    string code = 2;
+}
