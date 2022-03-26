@@ -1,4 +1,4 @@
-module github.com/likezhang-public/likezhang-public/test/a3/p1/stubs/grpc-go
+module github.com/likezhang-public/newskema/test/a3/p1/stub/grpc-go
 
 go 1.16
 
