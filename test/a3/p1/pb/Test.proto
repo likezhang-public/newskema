@@ -4,9 +4,6 @@ package a3.p1;
 
 option  go_package ="github.com/likezhang-public/newskema/test/a3/p1/stub/grpc-go";
 
-import "google/api/annotations.proto";
-import "validate/validate.proto";
-
 message HelloRequest {
     string msg = 1;
 }
@@ -17,9 +14,5 @@ message HelloReply {
 }
 
 service Test {
-    rpc SayHello (HelloRequest) returns (HelloReply) {
-        option (google.api.http) = {
-            get: "/api/hello"
-        };
-    };
+    rpc SayHello (HelloRequest) returns (HelloReply);
 }
