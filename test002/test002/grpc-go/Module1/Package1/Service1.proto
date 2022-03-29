@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Module1.Package1;
+
+option go_package="github.com/likezhang-public/newskema/test002/grpc-go/Module1/Package1";
+
+
+service Service1 {
+    rpc SayHello (HelloRequest) returns (HelloReply);
+}
+
+
+message HelloRequest {
+    string msg = 1;
+}
+message HelloReply {
+    string msg = 1;
+    string code = 2;
+}
